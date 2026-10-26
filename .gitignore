@@ -1,0 +1,26 @@
+# ---- Python 字节码缓存（自动生成，可安全删除）----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- 凭证与登录态，禁止入库 ----
+.env
+.env.*
+!.env.example
+.metabase_session
+*.token
+
+# ---- 取数产物：只保留目录结构，内容不入库 ----
+output/*
+!output/.gitignore
+*.log
+
+# ---- 本地环境 / 编辑器 / 系统 ----
+.venv/
+venv/
+env/
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
